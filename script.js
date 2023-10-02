@@ -1,47 +1,67 @@
-// Task 2--------------
-// const adminUser = "Ivan";
-// const correctPassword = "abcd1234";
+// Task 1
 
-// if (adminUser === adminUser && correctPassword === correctPassword) {
-//   console.log("correct user");
-// } else if (adminUser || correctPassword === null) {
-//   console.log("no data");
-// } else {
-//   console.log("wrong credentials");
+// let person = {
+//   name: "John",
+//   age: 25,
+//   showInfo: function () {
+//     console.log("Name: " + this.name + ", Age: " + this.age);
+//   },
+// };
+
+// person.showInfo();
+
+// Task 2
+// function calcSum(...args) {
+//   return args.reduce((sum, current) => sum + current, 0);
 // }
 
-// Task 3--------------
+// const ex1 = calcSum(1, 2, 4, 20, 41);
+// console.log(ex1);
 
-// let i = 0;
-// while (i < 3) {
-//   console.log(`number ${i}!`);
-//   i++;
-// }
+// Task 3
+// const firstArray = [1, 2, 3, 4, 5];
+// const exNumber = 6;
+// const newArray = [...firstArray, exNumber];
+// console.log(newArray);
 
-// Task 4--------------
-// function min(firstNumber, secondNumber) {
-//   if (firstNumber < secondNumber) {
-//     console.log(firstNumber);
-//   } else {
-//     console.log(secondNumber);
-//   }
-// }
+// Task 4
+// let person = {
+//   firstName: "John",
+//   lastName: "Green",
+// };
+// const { firstName, lastName } = person;
+// console.log(firstName);
+// console.log(lastName);
 
-// min(2, 5);
-// min(10, 4);
-
-// Task5--------------
-// function isEmpty(obj) {
-//   for (var key in obj) {
-//     if (obj.hasOwnProperty(key)) {
-//       return false;
+// Task 5
+// function sumOfEvenNumbers(numbers) {
+//   return numbers.reduce(function (sum, currentNumber) {
+//     if (currentNumber % 2 === 0) {
+//       return sum + currentNumber;
+//     } else {
+//       return sum;
 //     }
-//   }
-//   return true;
+//   }, 0);
 // }
+// var numbersArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// var result = sumOfEvenNumbers(numbersArray);
+// console.log(result);
 
-// var obj1 = {};
-// var obj2 = {key ="1"};
+// Task 6
 
-// console.log(isEmpty(obj1));
-// console.log(isEmpty(obj2));
+// const newArray = ["Привет", "Мир", "Как", "дела"];
+// const lengthsArray = newArray.map((str) => str.length);
+// console.log(lengthsArray);
+
+// Task 7
+// const people = [
+//   { name: "John", age: 19 },
+//   { name: "Anna", age: 30 },
+//   { name: "Emilia", age: 20 },
+//   { name: "Angela", age: 35 },
+// ];
+
+// const limitAge = 25;
+// const filterPeople = people.filter((person) => person.age > limitAge);
+
+// console.log(filterPeople);
